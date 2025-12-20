@@ -76,6 +76,9 @@ Short response questions can be found in the `src/short-response.md` file. Write
 Your task is to build a **recipe card** webpage for your favorite recipe. Starter files have been provided with a basic structure and CSS reset.
 
 This assignment is broken into **three phases** that align with what you're learning each day.
+1. [HTML Structure](#phase-1-html-structure-monday)
+2. [CSS: Colors & Typography](#phase-2-colors--typography-tuesday)
+3. [CSS: Box Model & Layout](#phase-3-box-model--layout-wednesday)
 
 If you ever forget a CSS property, check out the [cheat sheet](#css-cheatsheet) below first.
 
