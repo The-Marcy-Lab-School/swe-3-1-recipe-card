@@ -100,9 +100,10 @@ Build out the HTML content inside `<main>`. Your recipe card should include:
   - Add `id="recipe-image"` to the `<img>` element
 - [ ] A `<p>` element with a short description of the dish
   - Add `class="description"` to this paragraph
-- [ ] A `<section>` with an `<h2>` and an unordered list (`<ul>`) of at least 5 ingredients
+- [ ] A `<section>` with an `<h2>` and an unordered list (`<ul>`) of ingredients (minimum 3)
   - Add `class="ingredient"` to each `<li>` in this list
-- [ ] A `<section>` with an `<h2>` and an ordered list (`<ol>`) of at least 4 instructions
+- [ ] A `<section>` with an `<h2>` and an ordered list (`<ol>`) of instructions (minimum 3)
+  - Add `class="instruction"` to each `<li>` in this list
 - [ ] In the footer, wrap the text "GitHub" with an `<a>` element linking to your GitHub repo for this project
 
 **Tips:**
@@ -119,6 +120,7 @@ Add styles to `index.css`. For colors, **choose your own color theme** that matc
 **Choose Your Colors:**
 - [ ] Pick a body `background-color` and text `color`. These will be inherited by all elements on the page!
 - [ ] Give sections a `background-color` to create contrast with the body  (try white or a light color)
+- [ ] Choose the same background `background-color` for your description paragraph
 - [ ] Pick a text `color` for `h1` and `h2`
 - [ ] Pick a text `color` for `a` elements
 - [ ] Pick a `background-color` for your ingredient list items (`.ingredient`)
@@ -139,7 +141,7 @@ Browse [this color list](https://www.w3schools.com/cssref/css_colors.php) for id
 Apply spacing and layout to match the example design. If no property value is specified, it will be up to you to decide the property value!
 
 **Page Layout:**
-- [ ] Center the recipe card: set a `max-width` and `margin: auto` on the body
+- [ ] Center the recipe card: set a `max-width` and `margin-inline: auto` on the body
 - [ ] Add `padding` to the body for breathing room on the edges
 
 **Spacing Between Elements:**
@@ -149,8 +151,8 @@ Apply spacing and layout to match the example design. If no property value is sp
 
 **Image Styling:**
 - [ ] Style the image using its `id` attribute with `width: 100%` so it fills its container
-- [ ] Set `max-width` on the `figure` to limit the image size (try `300px`)
-- [ ] Center the figure by setting `margin: auto`
+- [ ] Set `max-width` on the `figure` to limit the image size (try `500px`)
+- [ ] Center the figure by setting `margin-inline: auto`
 - [ ] Add a `border` around the image
 - [ ] Round the image corners with `border-radius`
 
@@ -171,8 +173,12 @@ Apply spacing and layout to match the example design. If no property value is sp
 - [ ] Remove bullet points with `list-style: none` on the `ul`
 - [ ] Style the ingredient list items with `padding`, `margin-bottom`, and `border-radius`
 
+**Instructions List:**
+- [ ] Style the ingredient list items with `padding`, `margin-left`, `margin-bottom`, and `border-radius`
+
 **Footer:**
 - [ ] Add a `border-top` to visually separate the footer
+- [ ] Add a `padding` to the footer
 - [ ] Center the footer text
 
 **Link Hover Effect:**
@@ -230,7 +236,7 @@ Color values can be: named colors (`red`, `blue`), hex codes (`#FF5733`), or RGB
 
 | Property | What It Does | Example |
 | -------- | ------------ | ------- |
-| `margin: auto` | Centers a block element (needs a width!) | `margin: auto;` |
+| `margin-inline: auto` | Centers a block element (needs a width!) | `margin-inline: auto;` |
 | `list-style` | Styles/removes list bullets | `list-style: none;` |
 
 ### Interactive States (Pseudo-classes)
