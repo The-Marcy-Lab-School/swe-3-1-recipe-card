@@ -84,7 +84,9 @@ If you ever forget a CSS property, check out the [cheat sheet](#css-cheatsheet) 
 
 ### Example
 
-Below is an example of what your recipe card might look like. **Your recipe and styling should be unique!**
+Below is an example of what your recipe card should look like. **Your goal is to replicate this design** — the layout, spacing, typography styles, and overall structure should match the example. 
+
+The one exception: **choose your own color theme** based on your recipe! Pick colors that complement your dish.
 
 ![Example Recipe Card](./images/example-recipe-card.png)
 
@@ -95,12 +97,13 @@ Below is an example of what your recipe card might look like. **Your recipe and 
 Build out the HTML content inside `<main>`. Your recipe card should include:
 
 - [ ] A `<figure>` containing an `<img>` and `<figcaption>` for the recipe photo
+  - Add `id="recipe-image"` to the `<img>` element
 - [ ] A `<p>` element with a short description of the dish
+  - Add `class="description"` to this paragraph
 - [ ] A `<section>` with an `<h2>` and an unordered list (`<ul>`) of at least 5 ingredients
+  - Add `class="ingredient"` to each `<li>` in this list
 - [ ] A `<section>` with an `<h2>` and an ordered list (`<ol>`) of at least 4 instructions
-- [ ] An `<a>` element linking to the original recipe source
-- [ ] At least 2 different `class` attributes used on your elements
-- [ ] At least 1 `id` attribute used on an element
+- [ ] In the footer, wrap the text "GitHub" with an `<a>` element linking to your GitHub repo for this project
 
 **Tips:**
 - Find a recipe image by searching Google Images, right-click, and select "Copy Image Address"
@@ -110,47 +113,70 @@ Build out the HTML content inside `<main>`. Your recipe card should include:
 
 ### Phase 2: Colors & Typography (Tuesday)
 
-Add styles to `index.css` to make your recipe card visually appealing:
-
+Add styles to `index.css`. For colors, **choose your own color theme** that matches your recipe. For everything else, replicate the example.
 - [ ] Link the `index.css` file to your `index.html`
-- [ ] Set a `background-color` on the body
-- [ ] Set a text `color` on the body
-- [ ] Set a `font-family` on the body (with a fallback like `sans-serif`)
-- [ ] Style the headings (`h1`, `h2`) with `color` and `font-size`
-- [ ] Style links with a `color`
-- [ ] Use at least one class selector (`.classname`) to style a group of elements
-- [ ] Use at least one ID selector (`#idname`) to style a specific element
 
-**Tips to try:**
-- Use `text-align: center` on the `header` to center your title
-- Remove the default underline on links with `text-decoration: none`
-- Make links stand out with `font-weight: bold`
-- Use `font-style: italic` on a tagline or caption for emphasis
-- Try named colors like `midnightblue`, `coral`, `darkgreen`, or browse [this color list](https://www.w3schools.com/cssref/css_colors.php)
+**Choose Your Colors:**
+- [ ] Pick a **page background color** and **main text color** for the body
+- [ ] Pick a **heading color** for `h1` and `h2`
+- [ ] Pick a **link color** for `a` elements
+- [ ] Pick a **highlight color** for your ingredient list items (`.ingredient`)
+
+Browse [this color list](https://www.w3schools.com/cssref/css_colors.php) for ideas, or search "color palette" + your recipe name for inspiration!
+
+**Match the Example Typography:**
+- [ ] Set a `font-family` on the body with a fallback (e.g., `Georgia, serif`)
+- [ ] Center the header text with `text-align: center`
+- [ ] Make the image caption italic with `font-style: italic`
+- [ ] Remove link underlines with `text-decoration: none`
+- [ ] Make links bold with `font-weight: bold`
 
 ---
 
 ### Phase 3: Box Model & Layout (Wednesday)
 
-Apply spacing and layout to complete your recipe card:
+Apply spacing and layout to match the example design. If no property value is specified, it will be up to you to decide the property value!
 
-- [ ] Center the recipe card using `max-width` and `margin: auto` on the body
-- [ ] Add `padding` to the body
-- [ ] Add `margin` to create space between elements (headings, sections, etc.)
-- [ ] Add `padding` to at least one element to create space inside it
-- [ ] Add a `border` to at least one element
-- [ ] Use `border-radius` to round corners on at least one element
-- [ ] Add a `:hover` style to your links
+**Page Layout:**
+- [ ] Center the recipe card: set a `max-width` and `margin: auto` on the body
+- [ ] Add `padding` to the body for breathing room on the edges
 
-**Tips to try:**
-- Use `border-bottom` on `h2` elements to create an underline effect (add `padding-bottom` too for spacing)
-- Use `border-left` on the description paragraph for an accent line effect
-- Give sections a light `background-color` to make them stand out from the page
-- Center your image by putting `text-align: center` on the `figure`
-- Control image size by setting `width: 100%` on the image, then use `max-width` on the `figure`
-- Remove bullet points from your ingredients list with `list-style: none` on the `ul`
-- On `:hover`, try adding a `background-color` to links (you may want to add a little `padding` so the background has room to show)
-- Add a `border-top` to the footer to create a visual separator
+**Spacing Between Elements:**
+- [ ] Add `margin-bottom` to the `header`, `h1`, `h2`, `figure`, and `section` elements
+- [ ] Add `margin-top` to the `footer`
+
+**Image Styling:**
+- [ ] Center the image by setting `text-align: center` on the `figure`
+- [ ] Control the image size with `max-width` on the `figure` (try `300px`)
+- [ ] Style the image using its `id` attribute with `width: 100%` so it fills its container
+- [ ] Add a `border` around the image
+- [ ] Round the image corners with `border-radius`
+
+**Section Styling:**
+- [ ] Give sections a `background-color` (try white or a light color) to create contrast with the body.
+- [ ] Add `padding` inside the sections
+- [ ] Round section corners with `border-radius`
+
+**Heading Accent:**
+- [ ] Add a `border-bottom` to `h2` elements for an underline effect
+- [ ] Add `padding-bottom` to create space between the text and the underline
+
+**Description Accent:**
+- [ ] Add a `border-left` to the description paragraph for an accent line
+- [ ] Add `padding` to the description
+- [ ] Round the corners with `border-radius`
+
+**Ingredient List:**
+- [ ] Remove bullet points with `list-style: none` on the `ul`
+- [ ] Style the ingredient list items with `padding`, `margin-bottom`, and `border-radius`
+
+**Footer:**
+- [ ] Add a `border-top` to visually separate the footer
+- [ ] Center the footer text
+
+**Link Hover Effect:**
+- [ ] Add an `a:hover` rule that changes the `background-color` when hovering
+- [ ] Add a little `padding` and `border-radius` to links so the hover background looks nice
 
 ---
 
