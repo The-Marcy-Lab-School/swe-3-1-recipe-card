@@ -82,6 +82,11 @@ This assignment is broken into **three phases** that align with what you're lear
 
 If you ever forget a CSS property, check out the [cheat sheet](#css-cheatsheet) below first.
 
+**Debugging Tips:**
+- Test your page frequently by refreshing the browser (Cmd+Shift+R or Ctrl+Shift+R for hard refresh)
+- Use your browser's Developer Tools (right-click > Inspect) to debug CSS issues
+- If a style isn't working, check for typos and missing semicolons!
+
 ### Example
 
 Below is an example of what your recipe card should look like. **Your goal is to replicate this design** — the layout, spacing, typography styles, and overall structure should match the example. 
@@ -184,13 +189,6 @@ Apply spacing and layout to match the example design. If no property value is sp
 **Link Hover Effect:**
 - [ ] Add an `a:hover` rule that changes the `background-color` when hovering
 - [ ] Add a little `padding` and `border-radius` to links so the hover background looks nice
-
----
-
-**Debugging Tips:**
-- Test your page frequently by refreshing the browser (Cmd+Shift+R or Ctrl+Shift+R for hard refresh)
-- Use your browser's Developer Tools (right-click > Inspect) to debug CSS issues
-- If a style isn't working, check for typos and missing semicolons!
 
 ## CSS Cheatsheet
 
