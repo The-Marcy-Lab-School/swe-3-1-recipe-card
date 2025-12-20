@@ -1,25 +1,23 @@
 # Assignment 3.1 - Recipe Card
 
 - [Reminders](#reminders)
-  - [Asking ChatGPT for Help](#asking-chatgpt-for-help)
-  - [Be Okay With Being "Provisionally Complete"](#be-okay-with-being-provisionally-complete)
 - [Setup](#setup)
+- [Short Response Questions](#short-response-questions)
+- [HTML + CSS: Build a Recipe Card](#html--css-build-a-recipe-card)
+  - [Example](#example)
+  - [Phase 1: HTML Structure (Monday)](#phase-1-html-structure-monday)
+  - [Phase 2: Colors \& Typography (Tuesday)](#phase-2-colors--typography-tuesday)
+  - [Phase 3: Box Model \& Layout (Wednesday)](#phase-3-box-model--layout-wednesday)
 - [CSS Cheatsheet](#css-cheatsheet)
   - [Colors](#colors)
   - [Typography (Text Styling)](#typography-text-styling)
   - [Box Model (Spacing \& Sizing)](#box-model-spacing--sizing)
   - [Layout](#layout)
   - [Interactive States (Pseudo-classes)](#interactive-states-pseudo-classes)
-- [Short Response Questions](#short-response-questions)
-- [Build a Recipe Card](#build-a-recipe-card)
-  - [Example](#example)
-  - [Phase 1: HTML Structure (Monday)](#phase-1-html-structure-monday)
-  - [Phase 2: Colors \& Typography (Tuesday)](#phase-2-colors--typography-tuesday)
-  - [Phase 3: Box Model \& Layout (Wednesday)](#phase-3-box-model--layout-wednesday)
 
 ## Reminders
 
-### Asking ChatGPT for Help
+**<details><summary>Asking ChatGPT for Help</summary>**
 
 If you're stuck, you may use ChatGPT to clarify the assignment — but not to solve it for you. To do this, copy the meta-prompt below into ChatGPT along with the assignment question.
 
@@ -27,7 +25,9 @@ If you're stuck, you may use ChatGPT to clarify the assignment — but not to so
 
 Be mindful of your AI usage on assignments. AI can be a great tool to help your learning but it can also be detrimental if you let it do too much of the thinking for you.
 
-### Be Okay With Being "Provisionally Complete"
+</details>
+
+**<details><summary>Be Okay With Being "Provisionally Complete"</summary>**
 
 At Marcy, we will deem an assignment as "complete" if you satisfy the requirements listed below. 
 
@@ -42,6 +42,8 @@ That's why we encourage you to be comfortable with being **"provisionally comple
 - Committing to return, revise, and improve later
 
 Learning to move forward with provisional completeness will help you make steady progress while still building the habit of continuous improvement.
+
+</details>
 
 ## Setup
 
@@ -65,71 +67,17 @@ git push                # push the new commit to the remote repo
 
 When you are finished, create a pull request and tag your instructor for review.
 
-## CSS Cheatsheet
-
-Here is a reference of the CSS properties we've learned. **You don't need to memorize these!** Use this as a reference while working.
-
-### Colors
-
-| Property | What It Does | Example |
-| -------- | ------------ | ------- |
-| `color` | Sets text color | `color: midnightblue;` |
-| `background` or `background-color` | Sets background color | `background: azure;` |
-
-Color values can be: named colors (`red`, `blue`), hex codes (`#FF5733`), or RGB (`rgb(255, 87, 51)`).
-
-### Typography (Text Styling)
-
-| Property | What It Does | Example |
-| -------- | ------------ | ------- |
-| `font-family` | Sets the font | `font-family: Arial, sans-serif;` |
-| `font-size` | Sets text size (use `rem`!) | `font-size: 1.5rem;` |
-| `font-weight` | Sets boldness | `font-weight: bold;` |
-| `font-style` | Sets italic | `font-style: italic;` |
-| `text-align` | Aligns text | `text-align: center;` |
-| `text-decoration` | Adds/removes underlines | `text-decoration: none;` |
-
-### Box Model (Spacing & Sizing)
-
-| Property | What It Does | Example |
-| -------- | ------------ | ------- |
-| `width` | Sets element width | `width: 300px;` |
-| `max-width` | Sets maximum width | `max-width: 600px;` |
-| `padding` | Space INSIDE the border | `padding: 20px;` |
-| `margin` | Space OUTSIDE the border | `margin: 10px;` |
-| `border` | Creates a border (all sides) | `border: 2px solid black;` |
-| `border-top`, `border-bottom`, `border-left`, `border-right` | Border on one side | `border-bottom: 2px solid black;` |
-| `border-radius` | Rounds corners | `border-radius: 8px;` |
-
-**Shorthand for padding/margin:**
-- `padding: 10px;` → all sides
-- `padding: 10px 20px;` → top/bottom, left/right
-
-### Layout
-
-| Property | What It Does | Example |
-| -------- | ------------ | ------- |
-| `margin: auto` | Centers a block element (needs a width!) | `margin: auto;` |
-| `list-style` | Styles/removes list bullets | `list-style: none;` |
-
-### Interactive States (Pseudo-classes)
-
-```css
-/* When mouse hovers over element */
-a:hover {
-  background: lightblue;
-}
-```
-
 ## Short Response Questions
 
 Short response questions can be found in the `src/short-response.md` file. Write your responses directly in that file. Do not forget to complete this part of the assignment.
 
-## Build a Recipe Card
+## HTML + CSS: Build a Recipe Card
 
 Your task is to build a **recipe card** webpage for your favorite recipe. Starter files have been provided with a basic structure and CSS reset.
 
 This assignment is broken into **three phases** that align with what you're learning each day.
+
+If you ever forget a CSS property, check out the [cheat sheet](#css-cheatsheet) below first.
 
 ### Example
 
@@ -206,3 +154,59 @@ Apply spacing and layout to complete your recipe card:
 - Test your page frequently by refreshing the browser (Cmd+Shift+R or Ctrl+Shift+R for hard refresh)
 - Use your browser's Developer Tools (right-click > Inspect) to debug CSS issues
 - If a style isn't working, check for typos and missing semicolons!
+
+## CSS Cheatsheet
+
+Here is a reference of the CSS properties we've learned. **You don't need to memorize these!** Use this as a reference while working.
+
+### Colors
+
+| Property | What It Does | Example |
+| -------- | ------------ | ------- |
+| `color` | Sets text color | `color: midnightblue;` |
+| `background` or `background-color` | Sets background color | `background: azure;` |
+
+Color values can be: named colors (`red`, `blue`), hex codes (`#FF5733`), or RGB (`rgb(255, 87, 51)`).
+
+### Typography (Text Styling)
+
+| Property | What It Does | Example |
+| -------- | ------------ | ------- |
+| `font-family` | Sets the font | `font-family: Arial, sans-serif;` |
+| `font-size` | Sets text size (use `rem`!) | `font-size: 1.5rem;` |
+| `font-weight` | Sets boldness | `font-weight: bold;` |
+| `font-style` | Sets italic | `font-style: italic;` |
+| `text-align` | Aligns text | `text-align: center;` |
+| `text-decoration` | Adds/removes underlines | `text-decoration: none;` |
+
+### Box Model (Spacing & Sizing)
+
+| Property | What It Does | Example |
+| -------- | ------------ | ------- |
+| `width` | Sets element width | `width: 300px;` |
+| `max-width` | Sets maximum width | `max-width: 600px;` |
+| `padding` | Space INSIDE the border | `padding: 20px;` |
+| `margin` | Space OUTSIDE the border | `margin: 10px;` |
+| `border` | Creates a border (all sides) | `border: 2px solid black;` |
+| `border-top`, `border-bottom`, `border-left`, `border-right` | Border on one side | `border-bottom: 2px solid black;` |
+| `border-radius` | Rounds corners | `border-radius: 8px;` |
+
+**Shorthand for padding/margin:**
+- `padding: 10px;` → all sides
+- `padding: 10px 20px;` → top/bottom, left/right
+
+### Layout
+
+| Property | What It Does | Example |
+| -------- | ------------ | ------- |
+| `margin: auto` | Centers a block element (needs a width!) | `margin: auto;` |
+| `list-style` | Styles/removes list bullets | `list-style: none;` |
+
+### Interactive States (Pseudo-classes)
+
+```css
+/* When mouse hovers over element */
+a:hover {
+  background: lightblue;
+}
+```
