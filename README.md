@@ -117,7 +117,8 @@ Add styles to `index.css`. For colors, **choose your own color theme** that matc
 - [ ] Link the `index.css` file to your `index.html`
 
 **Choose Your Colors:**
-- [ ] Pick a **page background color** and **main text color** for the body
+- [ ] Pick a body `background-color` and text `color`. These will be inherited by all elements on the page!
+- [ ] Give sections a `background-color` to create contrast with the body  (try white or a light color)
 - [ ] Pick a **heading color** for `h1` and `h2`
 - [ ] Pick a **link color** for `a` elements
 - [ ] Pick a **highlight color** for your ingredient list items (`.ingredient`)
@@ -153,7 +154,6 @@ Apply spacing and layout to match the example design. If no property value is sp
 - [ ] Round the image corners with `border-radius`
 
 **Section Styling:**
-- [ ] Give sections a `background-color` (try white or a light color) to create contrast with the body.
 - [ ] Add `padding` inside the sections
 - [ ] Round section corners with `border-radius`
 
