@@ -147,9 +147,9 @@ Apply spacing and layout to match the example design. If no property value is sp
 - [ ] Add `margin-top` to the `footer`
 
 **Image Styling:**
-- [ ] Center the image by setting `text-align: center` on the `figure`
-- [ ] Control the image size with `max-width` on the `figure` (try `300px`)
 - [ ] Style the image using its `id` attribute with `width: 100%` so it fills its container
+- [ ] Set `max-width` on the `figure` to limit the image size (try `300px`)
+- [ ] Center the figure by setting `margin: auto`
 - [ ] Add a `border` around the image
 - [ ] Round the image corners with `border-radius`
 
