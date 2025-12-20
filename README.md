@@ -158,6 +158,7 @@ Apply spacing and layout to match the example design. If no property value is sp
 - [ ] Style the image using its `id` attribute with `width: 100%` so it fills its container
 - [ ] Set `max-width` on the `figure` to limit the image size (try `500px`)
 - [ ] Center the figure by setting `margin-inline: auto`
+- [ ] Center the figure text by setting `text-align: center`
 - [ ] Add a `border` around the image
 - [ ] Round the image corners with `border-radius`
 
