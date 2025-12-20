@@ -112,6 +112,7 @@ Build out the HTML content inside `<main>`. Your recipe card should include:
 
 Add styles to `index.css` to make your recipe card visually appealing:
 
+- [ ] Link the `index.css` file to your `index.html`
 - [ ] Set a `background-color` on the body
 - [ ] Set a text `color` on the body
 - [ ] Set a `font-family` on the body (with a fallback like `sans-serif`)
