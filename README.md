@@ -119,9 +119,9 @@ Add styles to `index.css`. For colors, **choose your own color theme** that matc
 **Choose Your Colors:**
 - [ ] Pick a body `background-color` and text `color`. These will be inherited by all elements on the page!
 - [ ] Give sections a `background-color` to create contrast with the body  (try white or a light color)
-- [ ] Pick a **heading color** for `h1` and `h2`
-- [ ] Pick a **link color** for `a` elements
-- [ ] Pick a **highlight color** for your ingredient list items (`.ingredient`)
+- [ ] Pick a text `color` for `h1` and `h2`
+- [ ] Pick a text `color` for `a` elements
+- [ ] Pick a `background-color` for your ingredient list items (`.ingredient`)
 
 Browse [this color list](https://www.w3schools.com/cssref/css_colors.php) for ideas, or search "color palette" + your recipe name for inspiration!
 
