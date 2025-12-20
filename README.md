@@ -143,7 +143,8 @@ Apply spacing and layout to match the example design. If no property value is sp
 - [ ] Add `padding` to the body for breathing room on the edges
 
 **Spacing Between Elements:**
-- [ ] Add `margin-bottom` to the `header`, `h1`, `h2`, `figure`, and `section` elements
+- [ ] Add `margin-bottom` to `header`, `figure`, `.description`, and `section`
+- [ ] Add `margin-bottom` to the `h1` and `h2` elements
 - [ ] Add `margin-top` to the `footer`
 
 **Image Styling:**
