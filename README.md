@@ -4,7 +4,7 @@
 - [Setup](#setup)
 - [Short Response Questions](#short-response-questions)
 - [HTML + CSS: Build a Recipe Card](#html--css-build-a-recipe-card)
-  - [Example](#example)
+  - [Target Example](#target-example)
   - [Phase 1: HTML Structure (Monday)](#phase-1-html-structure-monday)
   - [Phase 2: Colors \& Typography (Tuesday)](#phase-2-colors--typography-tuesday)
   - [Phase 3: Box Model \& Layout (Wednesday)](#phase-3-box-model--layout-wednesday)
@@ -50,12 +50,14 @@ Learning to move forward with provisional completeness will help you make steady
 For guidance on setting up and submitting this assignment, refer to the Marcy lab School Docs How-To guide for [Working with Short Response and Coding Assignments](https://marcylabschool.gitbook.io/marcy-lab-school-docs/how-tos/working-with-assignments#how-to-work-on-assignments).
 
 Starter files have been provided in the `src/` directory:
-- `index.html` - Basic HTML structure to build upon
+- `index.html` - The landing page with Basic HTML structure to build upon
+- `ingredients.html` - The ingredients page with basic HTML structure to build upon
+- `instructions.html` - The instructions page with basic HTML structure to build upon
 - `index.css` - CSS file with the reset included
 
-**To view your page**: Right-click on `index.html` in VS Code and select "Reveal in Finder/Explorer", then drag the file into Chrome.
+**To view your page**: Drag and drop the `index.html` from the file explorer in VS Code directly into your Chrome Browser tab (do not use Safari — their devtools are terrible. Firefox is okay but not preferred).
 
-Here are some useful commands to remember.
+Here are some useful commands to remember to get started
 
 ```sh
 git checkout -b draft   # switch to the draft branch before starting
@@ -76,31 +78,64 @@ Short response questions can be found in the `src/short-response.md` file. Write
 Your task is to build a **recipe card** webpage for your favorite recipe. Starter files have been provided with a basic structure and CSS reset.
 
 This assignment is broken into **three phases** that align with what you're learning each day.
-1. [HTML Structure](#phase-1-html-structure-monday)
-2. [CSS: Colors & Typography](#phase-2-colors--typography-tuesday)
-3. [CSS: Box Model & Layout](#phase-3-box-model--layout-wednesday)
+1. [HTML Structure](#phase-1-html-structure-monday) — Create the content and structure of all three pages. Connect them with hyperlinks. No styling yet!
+2. [CSS: Colors & Typography](#phase-2-colors--typography-tuesday) — Establish the basic color scheme and set your typography.
+3. [CSS: Box Model & Layout](#phase-3-box-model--layout-wednesday) — Add padding, spacing, and borders. Adjust content sizing where necessary.
 
-If you ever forget a CSS property, check out the [cheat sheet](#css-cheatsheet) below first.
+If you ever forget a CSS property, check out the [cheat sheet](#css-cheatsheet) at the end of this README first.
 
-### Example
+### Target Example
 
-Below is an example of what your recipe card might look like. **Your recipe and styling should be unique!**
+Below is shows what your recipe card should look like. **Your recipe, colors, and typography should be unique but the content, structure, and layout should match this as closely as possible.**
 
-![Example Recipe Card](./images/example-recipe-card.png)
+There will be three pages to build that can all use the same stylesheet for a cohesive user experience.
+
+![Example Recipe Card Website](./images/example.svg)
+
+You can view them closer up below:
+
+**<details><summary>Home</summary>**
+
+![The Home page of the recipe card](./images/home.png)
+</details>
+
+**<details><summary>Ingredients</summary>**
+
+![The Ingredients page of the recipe card](./images/ingredients.png)
+</details>
+
+**<details><summary>Instructions</summary>**
+
+![The Instructions page of the recipe card](./images/instructions.png)
+</details>
 
 ---
 
 ### Phase 1: HTML Structure (Monday)
 
-Build out the HTML content inside `<main>`. Your recipe card should include:
+**Shared Content**: Take a look at the examples. You'll notice that all three pages have the exact same header and footer content. They also all share the same picture and caption. Build those first in the `index.html` file and then copy them over to your `ingredients.html` and `instructions.html` files.
 
-- [ ] A `<figure>` containing an `<img>` and `<figcaption>` for the recipe photo
-- [ ] A `<p>` element with a short description of the dish
-- [ ] A `<section>` with an `<h2>` and an unordered list (`<ul>`) of at least 5 ingredients
-- [ ] A `<section>` with an `<h2>` and an ordered list (`<ol>`) of at least 4 instructions
-- [ ] An `<a>` element linking to the original recipe source
-- [ ] At least 2 different `class` attributes used on your elements
-- [ ] At least 1 `id` attribute used on an element
+- [ ] In the `<head>` element, update the `<title>` with the name of your dish.
+- [ ] In the `<header>` element, update the `<h1>` with the name of your dish. 
+- [ ] In the `<header>` element, add a `<nav>` containing three hyperlinks (`<a>`) for each of your three pages.
+- [ ] In the `<main>` element, add a `<figure>` containing an `<img>` and `<figcaption>` for the recipe photo.
+- [ ] In the `<footer>` element, add a hyperlink (`<a>`) element that directs the user to your GitHub profile. It should be nested within a paragraph.
+
+**Home Page Main Content**: Next, build out the HTML content that is unique to the home page:
+
+- [ ] In the `<main>` element, add a `<p>` element with a short description of the dish
+
+**Ingredients Page Main Content**: Next, build out the HTML content that is unique to the ingredients page:
+
+- [ ] In the `<main>` element, add a `<section>` 
+- [ ] Inside that `<section>` element, add an `<h2>` with the text content "Ingredients".
+- [ ] Below that `<h2>` element, add an unordered list (`<ul>`) of at least 3 ingredients as list items.
+
+**Instructions Page Main Content**: Next, build out the HTML content that is unique to the instructions page:
+
+- [ ] In the `<main>` element, add a `<section>` 
+- [ ] Inside that `<section>` element, add an `<h2>` with the text content "Instructions".
+- [ ] Below that `<h2>` element, add an ordered list (`<ol>`) of at least 3 instructions as list items.
 
 **Tips:**
 - Find a recipe image by searching Google Images, right-click, and select "Copy Image Address"
@@ -117,6 +152,7 @@ Add styles to `index.css` to make your recipe card visually appealing:
 - [ ] Set a `font-family` on the body (with a fallback like `sans-serif`)
 - [ ] Style the headings (`h1`, `h2`) with `color` and `font-size`
 - [ ] Style links with a `color`
+- [ ] Add a hover effect to change the appearance of links when hovering over them.
 - [ ] Use at least one class selector (`.classname`) to style a group of elements
 - [ ] Use at least one ID selector (`#idname`) to style a specific element
 
@@ -125,7 +161,8 @@ Add styles to `index.css` to make your recipe card visually appealing:
 - Remove the default underline on links with `text-decoration: none`
 - Make links stand out with `font-weight: bold`
 - Use `font-style: italic` on a tagline or caption for emphasis
-- Try named colors like `midnightblue`, `coral`, `darkgreen`, or browse [this color list](https://www.w3schools.com/cssref/css_colors.php)
+- On `:hover`, try adding a `background-color` to links
+- Google Color picker to choose a main color for your color palette. Then, use [ColorSpace](https://mycolor.space/) to generate a palette of complimentary colors!
 
 ---
 
@@ -133,13 +170,11 @@ Add styles to `index.css` to make your recipe card visually appealing:
 
 Apply spacing and layout to complete your recipe card:
 
-- [ ] Center the recipe card using `max-width` and `margin: auto` on the body
-- [ ] Add `padding` to the body
+- [ ] Center the recipe card using `max-width` and `margin: auto` on the entire body
 - [ ] Add `margin` to create space between elements (headings, sections, etc.)
-- [ ] Add `padding` to at least one element to create space inside it
-- [ ] Add a `border` to at least one element
-- [ ] Use `border-radius` to round corners on at least one element
-- [ ] Add a `:hover` style to your links
+- [ ] Add `padding` to create space inside an element
+- [ ] Add `border` to all or just one side of elements for a touch of color
+- [ ] Use `border-radius` for rounded corners
 
 **Tips to try:**
 - Use `border-bottom` on `h2` elements to create an underline effect (add `padding-bottom` too for spacing)
@@ -148,7 +183,6 @@ Apply spacing and layout to complete your recipe card:
 - Center your image by putting `text-align: center` on the `figure`
 - Control image size by setting `width: 100%` on the image, then use `max-width` on the `figure`
 - Remove bullet points from your ingredients list with `list-style: none` on the `ul`
-- On `:hover`, try adding a `background-color` to links (you may want to add a little `padding` so the background has room to show)
 - Add a `border-top` to the footer to create a visual separator
 
 ---
@@ -164,35 +198,35 @@ Here is a reference of the CSS properties we've learned. **You don't need to mem
 
 ### Colors
 
-| Property | What It Does | Example |
-| -------- | ------------ | ------- |
-| `color` | Sets text color | `color: midnightblue;` |
-| `background` or `background-color` | Sets background color | `background: azure;` |
+| Property                           | What It Does          | Example                |
+| ---------------------------------- | --------------------- | ---------------------- |
+| `color`                            | Sets text color       | `color: midnightblue;` |
+| `background` or `background-color` | Sets background color | `background: azure;`   |
 
 Color values can be: named colors (`red`, `blue`), hex codes (`#FF5733`), or RGB (`rgb(255, 87, 51)`).
 
 ### Typography (Text Styling)
 
-| Property | What It Does | Example |
-| -------- | ------------ | ------- |
-| `font-family` | Sets the font | `font-family: Arial, sans-serif;` |
-| `font-size` | Sets text size (use `rem`!) | `font-size: 1.5rem;` |
-| `font-weight` | Sets boldness | `font-weight: bold;` |
-| `font-style` | Sets italic | `font-style: italic;` |
-| `text-align` | Aligns text | `text-align: center;` |
-| `text-decoration` | Adds/removes underlines | `text-decoration: none;` |
+| Property          | What It Does                | Example                           |
+| ----------------- | --------------------------- | --------------------------------- |
+| `font-family`     | Sets the font               | `font-family: Arial, sans-serif;` |
+| `font-size`       | Sets text size (use `rem`!) | `font-size: 1.5rem;`              |
+| `font-weight`     | Sets boldness               | `font-weight: bold;`              |
+| `font-style`      | Sets italic                 | `font-style: italic;`             |
+| `text-align`      | Aligns text                 | `text-align: center;`             |
+| `text-decoration` | Adds/removes underlines     | `text-decoration: none;`          |
 
 ### Box Model (Spacing & Sizing)
 
-| Property | What It Does | Example |
-| -------- | ------------ | ------- |
-| `width` | Sets element width | `width: 300px;` |
-| `max-width` | Sets maximum width | `max-width: 600px;` |
-| `padding` | Space INSIDE the border | `padding: 20px;` |
-| `margin` | Space OUTSIDE the border | `margin: 10px;` |
-| `border` | Creates a border (all sides) | `border: 2px solid black;` |
-| `border-top`, `border-bottom`, `border-left`, `border-right` | Border on one side | `border-bottom: 2px solid black;` |
-| `border-radius` | Rounds corners | `border-radius: 8px;` |
+| Property                                                     | What It Does                 | Example                           |
+| ------------------------------------------------------------ | ---------------------------- | --------------------------------- |
+| `width`                                                      | Sets element width           | `width: 300px;`                   |
+| `max-width`                                                  | Sets maximum width           | `max-width: 600px;`               |
+| `padding`                                                    | Space INSIDE the border      | `padding: 20px;`                  |
+| `margin`                                                     | Space OUTSIDE the border     | `margin: 10px;`                   |
+| `border`                                                     | Creates a border (all sides) | `border: 2px solid black;`        |
+| `border-top`, `border-bottom`, `border-left`, `border-right` | Border on one side           | `border-bottom: 2px solid black;` |
+| `border-radius`                                              | Rounds corners               | `border-radius: 8px;`             |
 
 **Shorthand for padding/margin:**
 - `padding: 10px;` → all sides
@@ -200,10 +234,10 @@ Color values can be: named colors (`red`, `blue`), hex codes (`#FF5733`), or RGB
 
 ### Layout
 
-| Property | What It Does | Example |
-| -------- | ------------ | ------- |
-| `margin: auto` | Centers a block element (needs a width!) | `margin: auto;` |
-| `list-style` | Styles/removes list bullets | `list-style: none;` |
+| Property       | What It Does                             | Example             |
+| -------------- | ---------------------------------------- | ------------------- |
+| `margin: auto` | Centers a block element (needs a width!) | `margin: auto;`     |
+| `list-style`   | Styles/removes list bullets              | `list-style: none;` |
 
 ### Interactive States (Pseudo-classes)
 

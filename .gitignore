@@ -1,2 +1,6 @@
 # Don't include the example solution in the student repo
 example-solution/
+
+.DS_Store
+
+node_modules/
