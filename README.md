@@ -5,6 +5,7 @@
 - [Short Response Questions](#short-response-questions)
 - [HTML + CSS: Build a Recipe Card](#html--css-build-a-recipe-card)
   - [Target Example](#target-example)
+  - [Three Phases](#three-phases)
   - [Phase 1: HTML Structure (Monday)](#phase-1-html-structure-monday)
   - [Phase 2: Colors \& Typography (Tuesday)](#phase-2-colors--typography-tuesday)
   - [Phase 3: Box Model \& Layout (Wednesday)](#phase-3-box-model--layout-wednesday)
@@ -77,13 +78,6 @@ Short response questions can be found in the `src/short-response.md` file. Write
 
 Your task is to build a **recipe card** webpage for your favorite recipe. Starter files have been provided with a basic structure and CSS reset.
 
-This assignment is broken into **three phases** that align with what you're learning each day.
-1. [HTML Structure](#phase-1-html-structure-monday) — Create the content and structure of all three pages. Connect them with hyperlinks. No styling yet!
-2. [CSS: Colors & Typography](#phase-2-colors--typography-tuesday) — Establish the basic color scheme and set your typography.
-3. [CSS: Box Model & Layout](#phase-3-box-model--layout-wednesday) — Add padding, spacing, and borders. Adjust content sizing where necessary.
-
-If you ever forget a CSS property, check out the [cheat sheet](#css-cheatsheet) at the end of this README first.
-
 ### Target Example
 
 Below is shows what your recipe card should look like. **Your recipe, colors, and typography should be unique but the content, structure, and layout should match this as closely as possible.**
@@ -109,14 +103,29 @@ You can view them closer up below:
 ![The Instructions page of the recipe card](./images/instructions.png)
 </details>
 
+
+### Three Phases
+
+This assignment is broken into **three phases** that align with what you're learning each day.
+1. [HTML Structure](#phase-1-html-structure-monday) — Create the content and structure of all three pages. Connect them with hyperlinks. No styling yet!
+2. [CSS: Colors & Typography](#phase-2-colors--typography-tuesday) — Establish the basic color scheme and set your typography.
+3. [CSS: Box Model & Layout](#phase-3-box-model--layout-wednesday) — Add padding, spacing, and borders. Adjust content sizing where necessary.
+
+If you ever forget a CSS property, check out the [cheat sheet](#css-cheatsheet) at the end of this README first.
+
 ---
 
 ### Phase 1: HTML Structure (Monday)
 
-**Shared Content**: Take a look at the examples. You'll notice that all three pages have the exact same header and footer content. They also all share the same picture and caption. Build those first in the `index.html` file and then copy them over to your `ingredients.html` and `instructions.html` files.
+**Shared Content**: Take a look at the examples. You'll notice that all three pages have the exact same header and footer content. They also all share the same picture and caption. 
 
+You can build these first in the `index.html` file and then copy them over to your `ingredients.html` and `instructions.html` files.
+
+- [ ] Type `html:5` and hit enter to insert the "boilerplate" structure
+- [ ] Update the `title` with the name of your dish
+- [ ] In the `<body>` element, add a `header`, `main`, and `footer` element
 - [ ] In the `<head>` element, update the `<title>` with the name of your dish.
-- [ ] In the `<header>` element, update the `<h1>` with the name of your dish. 
+- [ ] In the `<header>` element, add  a `<h1>` with the name of your dish. 
 - [ ] In the `<header>` element, add a `<nav>` containing three hyperlinks (`<a>`) for each of your three pages.
 - [ ] In the `<main>` element, add a `<figure>` containing an `<img>` and `<figcaption>` for the recipe photo.
 - [ ] In the `<footer>` element, add a hyperlink (`<a>`) element that directs the user to your GitHub profile. It should be nested within a paragraph.
@@ -147,22 +156,22 @@ You can view them closer up below:
 
 Add styles to `index.css` to make your recipe card visually appealing:
 
-- [ ] Set a `background-color` on the body
-- [ ] Set a text `color` on the body
-- [ ] Set a `font-family` on the body (with a fallback like `sans-serif`)
+- [ ] Set a `background-color` on the body. 
+- [ ] Set a text `color` on the body. Make sure that it has good color contrast with the background!
+- [ ] Set a `font-family` on the body (with a fallback like `sans-serif`).
 - [ ] Style the headings (`h1`, `h2`) with `color` and `font-size`
 - [ ] Style links with a `color`
 - [ ] Add a hover effect to change the appearance of links when hovering over them.
-- [ ] Use at least one class selector (`.classname`) to style a group of elements
-- [ ] Use at least one ID selector (`#idname`) to style a specific element
+- [ ] Add `class` attributes and use a class selector (`.classname`) to style the ingredient list items and the instruction list items as groups of elements.
+- [ ] Add an `id` attribute and use the ID selector (`#idname`) to style a specific element.
 
 **Tips to try:**
+- Google "color picker" and use the tool to choose a main color for your color palette. Then, use [ColorSpace](https://mycolor.space/) to generate a palette of complimentary colors!
 - Use `text-align: center` on the `header` to center your title
 - Remove the default underline on links with `text-decoration: none`
 - Make links stand out with `font-weight: bold`
 - Use `font-style: italic` on a tagline or caption for emphasis
 - On `:hover`, try adding a `background-color` to links
-- Google Color picker to choose a main color for your color palette. Then, use [ColorSpace](https://mycolor.space/) to generate a palette of complimentary colors!
 
 ---
 
