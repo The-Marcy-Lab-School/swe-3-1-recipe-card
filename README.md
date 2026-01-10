@@ -51,10 +51,10 @@ Learning to move forward with provisional completeness will help you make steady
 For guidance on setting up and submitting this assignment, refer to the Marcy lab School Docs How-To guide for [Working with Short Response and Coding Assignments](https://marcylabschool.gitbook.io/marcy-lab-school-docs/how-tos/working-with-assignments#how-to-work-on-assignments).
 
 Starter files have been provided in the `src/` directory:
-- `index.html` - The landing page with Basic HTML structure to build upon
-- `ingredients.html` - The ingredients page with basic HTML structure to build upon
-- `instructions.html` - The instructions page with basic HTML structure to build upon
-- `index.css` - CSS file with the reset included
+- `index.html`
+- `ingredients.html`
+- `instructions.html`
+- `index.css`
 
 **To view your page**: Drag and drop the `index.html` from the file explorer in VS Code directly into your Chrome Browser tab (do not use Safari — their devtools are terrible. Firefox is okay but not preferred).
 
